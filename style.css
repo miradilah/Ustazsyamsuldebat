@@ -1,0 +1,330 @@
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+header
+{
+	background-image:url(images/bg.jpg);
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.wabg img
+{
+	width: 95%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+/*          NAVIGATION BAR         */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: darkorange;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.logo img
+{
+	width: 150px;
+	height: auto;
+	float: left;
+}
+
+.row
+{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.content{
+    margin-top: 9%;
+    margin-left: 9%;
+    color: rgb(255, 250, 250);
+}
+
+.content h1{
+    font-size: 100px;
+    line-height: 90px;
+    font-weight: 600;
+}
+
+.content p{
+	font-size: 18px;
+	color: white;
+    max-width: 500px;
+    line-height: 28px;
+    opacity: 0;
+}
+
+.slide-left{
+    animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 30px 30px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: darkorange;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*          BUTTON         */
+.button
+{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%)
+}
+
+.btn
+{
+	border: 2px solid white;
+	padding:20px 40px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 15px;
+	text-transform:uppercase;
+	border-radius: 12px;
+
+}
+
+.btn-one
+{
+	background-color: darkorange;
+	font-family: "Roboto", sans-serif;
+}
+
+.btn-two
+{
+	font-family: "Roboto", sans-serif;
+}
+
+.btn-two:hover
+{
+	background-color: green;
+	transition: all 0.5sease-in;
+}
+
+.btnv
+{
+	padding:10px 15px;
+	color: white;
+	text-decoration: none;
+	margin-right: 5px;
+	font-size: 15px;
+	text-transform:uppercase;
+	border-radius: 12px;
+
+}
+
+.btn-view
+{
+	background-color: green;
+	font-family: "Roboto", sans-serif;
+}
+
+
+/*          ABOUT US IMAGES        */
+.about-image {
+  background-image: url(images/bg2.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.about-text {
+  text-align: left;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.team img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.team {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.icon img {
+  float: center;
+  border-radius: 50%;
+  width: 7%;
+}
+
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*          TABLE         */
+table {
+  font-family: arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+td, th {
+  border: 0px solid #dddddd;
+  text-align: center;
+  padding: 17px;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/*         ABOUT NADIM         */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  height: 350px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/*     FOOTER     */
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 10%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+}
